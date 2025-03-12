@@ -17,9 +17,13 @@ class Dragon:
 
 class Coin:
     def __init__(self,x,y):
+        # 加载金币图像
         self.image = pygame.image.load("coin.png")
+        # 获取图像矩形区域
         self.rect = self.image.get_rect()
+        # 设置金币移动速度
         self.speed = 10
+        # 调用重置方法设置初始位置
         self.reset(x,y)
     
     def reset(self,x,y):
